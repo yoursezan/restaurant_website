@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Top Section -->
+    <div class="bg-dark text-white py-2 border-bottom">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div>
+                <small class="me-3">Email: info@restaurant.com</small>
+                <small>Phone: +123 456 7890</small>
+            </div>
+            <div>
+                <small class="me-3"><span id="current-date-time"></span></small>
+                <a href="reservation.html" class="text-white text-decoration-none me-2"><small>Reservation</small></a> |
+                <a href="login.html" class="text-white text-decoration-none ms-2 me-2"><small>Login</small></a> |
+                <a href="signup.html" class="text-white text-decoration-none ms-2"><small>Register</small></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Delicious Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-around">
+                    <li class="nav-item"><a class="nav-link text-white active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="login.html">Login/Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/hero-slide-1.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Exquisite Culinary Experience</h2>
+                    <a href="reservation.html" class="btn btn-warning btn-lg mt-2">Book a Table</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hero-slide-2.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Fresh & Organic Ingredients</h2>
+                    <a href="menu.html" class="btn btn-warning btn-lg mt-2">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Special Dishes Section -->
+    <section class="container">
+        <h2 class="text-center mb-4">Special Dishes</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="images/steak.jpg" class="card-img-top" alt="Dish">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Steak</h5>
+                        <p class="card-text">Tender grilled beef served with garlic butter and herbs.</p>
+                        <h6 class="text-danger">$24.99</h6>
+                        <a href="dish-detail.html" class="btn btn-danger w-100 mt-2">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="images/pasta.jpg" class="card-img-top" alt="Dish">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta Carbonara</h5>
+                        <p class="card-text">Classic Italian pasta with cream, bacon, and parmesan.</p>
+                        <h6 class="text-danger">$16.50</h6>
+                        <a href="dish-detail.html" class="btn btn-danger w-100 mt-2">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="images/seafood.jpg" class="card-img-top" alt="Dish">
+                    <div class="card-body">
+                        <h5 class="card-title">Seafood Platter</h5>
+                        <p class="card-text">Fresh assortment of shrimps, calamari, and oysters.</p>
+                        <h6 class="text-danger">$32.00</h6>
+                        <a href="dish-detail.html" class="btn btn-danger w-100 mt-2">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef's Recommendation Section -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Chef's Recommendation</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/chef-special.jpg" class="img-fluid rounded" alt="Chef Special">
+                </div>
+                <div class="col-md-6">
+                    <h3>Signature Roasted Salmon</h3>
+                    <p>Slow-roasted Atlantic salmon served with wild rice, steamed asparagus, and a delicate lemon-dill butter sauce. Specially prepared by Executive Chef John Doe.</p>
+                    <a href="reservation.html" class="btn btn-outline-danger">Reserve Your Table Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="container">
+        <h2 class="text-center mb-4">Customer Testimonials</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <p class="card-text">"The food was absolutely divine! The ambiance and quick service made our anniversary dinner truly unforgettable."</p>
+                        <h6 class="card-subtitle text-muted">- Sarah Jenkins</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <p class="card-text">"Best pasta in town! Highly recommend booking ahead because this place gets busy for good reason."</p>
+                        <h6 class="card-subtitle text-muted">- Michael Brown</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="bg-warning text-dark py-4">
+        <div class="container text-center">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get exclusive offers, event invites, and weekly menu updates.</p>
+            <form class="row g-2 justify-content-center">
+                <div class="col-auto">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-dark">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Big Footer Section -->
+    <footer class="bg-dark text-white pt-5 pb-3" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3" id="about">
+                    <h5>Delicious Restaurant</h5>
+                    <p>Providing exceptional dining experiences since 2010. Authentic recipes crafted with fresh ingredients.</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="menu.html" class="text-white-50 text-decoration-none">Menu</a></li>
+                        <li><a href="reservation.html" class="text-white-50 text-decoration-none">Reservation</a></li>
+                        <li><a href="login.html" class="text-white-50 text-decoration-none">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5>Opening Hours</h5>
+                    <p class="text-white-50 mb-1">Mon - Fri: 10:00 AM - 10:00 PM</p>
+                    <p class="text-white-50">Sat - Sun: 09:00 AM - 11:00 PM</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5>Social Media</h5>
+                    <a href="#" class="text-white-50 text-decoration-none d-block">Facebook</a>
+                    <a href="#" class="text-white-50 text-decoration-none d-block">Instagram</a>
+                    <a href="#" class="text-white-50 text-decoration-none d-block">Twitter</a>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <p class="text-center text-white-50 mb-0">&copy; 2026 Delicious Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery & Bootstrap JS Bundle -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
